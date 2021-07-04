@@ -3,8 +3,9 @@ Collection of my works
 
 [ 克隆 ]
 
+```bash
 git clone -b [分支]  https://github.com/ArchKS/sun
-
+```
 
 
 
