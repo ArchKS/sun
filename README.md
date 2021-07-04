@@ -3,7 +3,10 @@ Collection of my works
 
 [ 克隆 ]
 
-> [Git Bash] git clone -b [分支]  https://github.com/ArchKS/sun
+git clone -b [分支]  https://github.com/ArchKS/sun
+
+
+
 
 - Zenlog-frontend 毕设博客的前端页面 
 - Zenlog-backend  毕设博客的后端服务
