@@ -1,0 +1,49 @@
+$contentWidth: 100%;
+
+// 水平垂直居中
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// 分散两边垂直居中
+@mixin twoSide {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin twoSideWithSpaceEven{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+
+@mixin twoSideWithSpaceAround{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+
+// 左端对齐
+@mixin left {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+// 右端对齐
+@mixin right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+@mixin ellipsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

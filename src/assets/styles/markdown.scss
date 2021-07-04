@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&family=Open+Sans:ital@1&display=swap');
+
+.markdown-body{
+    @media screen and (max-width: 768px) {
+        width: 100% !important;
+        margin: 0 auto;
+    }
+    *{
+        // font-family: 'Long Cang', cursive;
+        // font-family: 'Open Sans', sans-serif;
+        font-size: 1rem;
+    }
+    h1,h2,h3,h4,h5,h6{
+        font-family: 'Long Cang', cursive;
+    }
+    user-select: text;
+    p{
+        img{
+            margin: 0 auto;
+        }
+        a{
+            display: inline-block;
+            font-family: 'Open Sans', sans-serif;
+        }
+    }
+    blockquote{
+        padding: 0 1.5rem;
+        margin: 2rem 0 2rem 2rem;
+        p{
+            font-family: 'Long Cang', cursive;
+            font-size: 1.3rem;
+        }
+    }
+    pre{
+        background: #444;
+        code {
+            display: block;
+            overflow-x: auto;
+            padding: 0.5rem;
+            color: rgb(216, 213, 213);
+            font-family: 'Long Cang', cursive;
+            font-size: 1.2rem;
+        }
+    }
+    li{
+        list-style-type: disc;
+    }
+}

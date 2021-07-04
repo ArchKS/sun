@@ -1,0 +1,60 @@
+$animation-time-fast: .1s;
+$animation-time-base: .2s;
+$animation-time-even: .3s;
+$animation-time-slow: .4s;
+$animation-time-cut: .7s;
+
+.slide-up-leave-to,
+.slide-up-enter {
+    transform: translateY(-100%);
+}
+
+.slide-up-enter-to,
+.slide-up-leave {
+    transform: translateY(0);
+}
+
+.slide-up-leave-active,
+.slide-up-enter-active {
+    transition: all $animation-time-even linear;
+}
+
+
+.zoom-leave-to,
+.zoom-enter {
+    transform: scale(1);
+}
+.zoom-leave,
+.zoom-enter-to{
+    transform: scale(1.5);
+}
+.zoom-leave-active,
+.zoom-enter-active{
+    transition: all $animation-time-even linear;
+}
+
+
+.search-enter,
+.search-leave-to {
+  transform: scaleX(0);
+}
+.search-leave,
+.search-enter-to {
+  transform: scaleX(1);
+}
+.search-leave-active,
+.search-enter-active {
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+.slide-down-enter,.slide-down-leave-to{
+    transform: translate(0,-100%);
+  }
+  .slide-down-enter-to,.slide-down-leave{
+    transform: translate(0,0);
+  }
+  .slide-down-leave-active,.slide-down-enter-active{
+    transition: all .5s linear;
+  }

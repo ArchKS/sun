@@ -1,0 +1,41 @@
+{
+  "name": "zenlog-client",
+  "version": "0.2.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@babel/preset-env": "^7.13.15",
+    "@tailwindcss/postcss7-compat": "^2.0.4",
+    "autoprefixer": "^9",
+    "axios": "^0.21.1",
+    "babel-plugin-component": "^1.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "core-js": "^3.6.5",
+    "element-ui": "^2.15.1",
+    "github-markdown-css": "^4.0.0",
+    "gsap": "^3.6.1",
+    "marked": "^2.0.3",
+    "postcss": "^7",
+    "stylelint-config-recommended": "^4.0.0",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+    "vue": "^2.6.11",
+    "vue-i18n": "^8.24.3",
+    "vue-router": "^3.2.0",
+    "vue-vanta": "^0.0.1",
+    "vuex": "^3.4.0",
+    "web-storage-cache": "^1.1.1",
+    "zepto-webpack": "^1.2.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-plugin-vuex": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.2",
+    "vue-template-compiler": "^2.6.11"
+  }
+}
