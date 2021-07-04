@@ -1,0 +1,372 @@
+/* 
+Date-Begin: 2020/9/12 
+Date-End  :   
+Author: 云芒
+Description: 京东商城项目实战 css 样式表
+*/
+
+
+.w {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #F4F4F4;
+}
+
+a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #999999;
+}
+a:hover {
+    color: #c81623;
+}
+/* 一个红色的公共字体颜色 */
+.f10 {
+    color: #f10215!important;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+/* header 部分 */
+header {
+    height: 80px;
+    background-color: #020000;
+}
+
+ul,h1,p,input,button,body,dl,dt,fieldset,h2,legend,li,ol,td,p,pre,text,textarea,th {
+    margin: 0;
+    padding: 0;
+}
+
+/* 这个是middle里的元素 */
+input,button {
+    /* 设置搜索边框 */
+    border: 0; 
+    /* 取消轮廓边框 */
+    outline: none;
+}
+/* 清楚列表样式 */
+ul{
+    list-style-type: none;
+}
+
+.shortcut {
+    background-color: #e3e4e5;
+    line-height: 30px;  
+    height: 30px;
+    border-bottom: 1px solid #dddddd;
+    font-size: 12px;
+    color: #999999;
+}
+
+.city {
+    margin-left: 200px;
+}
+
+.shortcut li {
+    float: left;
+}
+
+.space {
+    width: 1px;
+    height: 10px;
+    background-color: #ccc;
+    /* 设置左右上下的距离 */
+    margin: 10px 12px 0; /* 上10 左右12 下 0*/
+}
+
+/* 定义手机京东的样式 */
+.moblie {
+    /* 如果父元素没有定义position，那么子元素的绝对定位会以body为准 */
+    position: relative;
+}
+
+/* 给扫码的图标设置样式 */
+.moblie img {
+    position: absolute;
+    top: 32px;
+    left: -3px;
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin: 0;
+}
+
+
+/* 中间部分 包括 京东Logo、输入框、建议栏、分类栏、购物车、日常节日*/
+/* 想让图片上移动，且不会影响middle整体！！！ */
+.middle {
+    height: 140px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: -30px;
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, .3);
+}
+
+.logo a {
+    display: block;
+    background: url(../images/logo.png) no-repeat;
+    width: 190px;
+    height: 170px;
+    background-color: #fff;
+}
+
+/* 搜索框 */
+
+.form {
+    width: 550px;
+    height: 35px;
+    position: absolute;
+    top: 25px;
+    left: 320px;
+}
+
+.form input {
+    width: 498px;
+    height: 33px;
+    border: 1px solid #f10215;
+    /* float布局 让input和button在同一行，如果仅仅是设置width，中间会有空隙 */
+    float: left;
+    font-size: 14px;
+    /* 设置输入字体到边框的距离    注意：这个步骤可能会挤掉button，我们可以通过改变盒子模型实现不把button挤掉 */
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+
+.form button {
+    width: 50px;
+    height: 33px;
+    background-color: #f10215;
+    float: left;
+}
+
+/* 把 icon-search 图标改为白色 */
+.form button i {
+    color: #fff;
+}
+
+
+/* 购物车 */
+.shopCar {
+    width: 188px;
+    height: 33px;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 25px;;
+    left: 900px; 
+    line-height: 33px;
+    text-align: center;
+}
+
+.shopCar i {
+    color: red;
+    margin-right: 5px;
+}
+
+.shopCar span {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #f10215;
+    position: absolute;
+    top: 7px;
+    left: 150px;
+    line-height: 15px;
+    color: white;
+
+}
+
+
+/* 热词 */
+.hotwords {
+    position: absolute;
+    top: 64px;
+    left: 318px;
+}
+
+/* 小导航栏 */
+.navitems {
+    width: 770px;
+    height: 40px;
+    position: absolute;
+    bottom: 0;
+    left: 200px;
+    line-height: 40px;
+}
+
+.navitems li {
+    float: left;
+    margin-left: 30px;
+}
+
+.navitems li a {
+    font-size: 16px;
+    font-weight: 700;
+    color: #555;
+}
+
+.navitems li a:hover {
+    color: #f10215;
+}
+
+.navitems .space {
+    /* margin-top: 15px;
+    margin-left: 15px;
+    margin-right: -15px; */
+
+    margin: 15px -15px 0 15px;
+
+}
+
+/* 页面底部 */
+footer {
+    height: 500px;
+    background-color: #EAEAEA;
+    margin-top: 35px;
+}
+
+.service {
+    /* padding是为了让 service ul li 垂直居中 */
+    padding: 30px;
+    border-bottom: 1px solid #dedede;
+    background-color: #ccc;
+    /* 清除浮动的方式，给添加浮动的父亲元素用 */
+    overflow: hidden;
+}
+
+
+.service ul li {
+    position: relative;
+    width: 297px;
+    height: 43px;
+    line-height: 43px;
+    float: left;
+}
+
+/* 更改页面底部的图片背景 ，背景是一张图，所以需要指定位置*/
+.service ul li:nth-child(2) h5 {
+    background-position: 0 -43px;
+}
+.service ul li:nth-child(3) h5 {
+    background-position: 0 -86px;
+}
+.service ul li:nth-child(4) h5 {
+    background-position: 0 -129px;
+}
+
+
+
+.service li h5 {
+    width: 36px;
+    height: 43px;
+    position: absolute;
+    top: -22px;
+    left: 38px;
+    background: url(../images/ico.png) no-repeat;
+}
+
+.service li p {
+    font-weight: 700;
+    margin-left: 82px;
+}
+
+.help {
+    height: 200px;
+    border-bottom: 1px solid #dedede;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+.help dl{
+    width: 192px;
+    float: left;
+}
+.help dt ,
+.coverage h5{
+    height: 30px;
+    font-size: 14px;
+    color: #666666;
+}
+.help dd {
+    height: 22px;
+}
+
+.help dd a {
+    margin-left: -40px;
+    box-sizing: border-box;
+}
+
+
+/* 范围 */
+.coverage {
+    width: 200px;
+    height: 150px;
+    background: url(../images/ico_footer.png) no-repeat;
+}
+
+.coverage h5 {
+    padding-left: 35px;
+}
+
+.coverage p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #666666;
+    width: 180px;
+    margin-top: -18px;
+}
+
+.coverage a {
+    display: block;
+    width: 180px;
+    text-align: right;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 8px;
+}
+
+.copyright a {
+    color: #666;
+}
+.copyright span {
+    color: #ccc;
+    margin: 0 7px;
+}
+.copyright div {
+    margin-top: 12px;
+}
+
+.copyright div p {
+    color: #666;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.foot-icon a {
+    /* 转为行内块，行内块可以用text-aglin居中对齐 */
+    display: inline-block;
+    width: 103px;
+    height: 33px;
+    background-color: pink;
+    text-align: center;
+    background: url(../images/ico_footer.png) no-repeat 0 -150px;
+    margin: 20px 4px 0;
+}
+
+.foot-icon a:nth-child(2) {
+    background-position: -103px -150px;
+}
+.foot-icon a:nth-child(4) {
+    background-position: 0 -183px;
+}

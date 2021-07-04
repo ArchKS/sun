@@ -1,0 +1,351 @@
+/* 
+Date Begin: 2020/9/13
+Date END: 
+
+Description: 京东商城的 专属首页样式 的样式
+
+*/
+nav {
+    position: absolute;
+    height: 52px;
+    width: 100%;
+    background-color: #fff;
+    overflow: hidden;
+    position: relative;
+    display: none;
+    border-bottom: 2px solid #f10215;
+}
+
+nav img {
+    position: absolute;
+    margin-top: 8px;
+    height: 35px;
+    margin-left: 520px;
+}
+
+nav .nav-search {
+    display: inline-block;
+    margin-top: 5px;
+    height: 33px;
+    margin-left: 740px;
+    border: 2px solid #f10215;
+}
+
+nav input {
+    width: 490px;
+    height: 100%;
+    color: #000000;
+    font-size: 12px;
+    background-color: #fff ;
+    box-sizing: border-box;
+}
+
+
+nav button {
+    height: 100%;
+    top: 10px;
+    width: 60px;
+    margin-left: -5px;
+    background-color: #f10215;
+    color: #fff;
+}
+
+
+.grid {
+    height: 480px;
+}
+
+
+.grid-col1 {
+    width: 190px;
+    height: 100%;
+    background-color: #6e6568;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+
+.grid-col1 ul {
+    margin: 10px 0;
+}
+
+.grid-col1 ul li {
+    /* 为什么这里不用margin-left: 14px
+    
+       使用margin会导致鼠标hover时，左边区域为空白，右边区域为悬停区
+    */
+    padding-left: 14px;
+    height: 27px;
+    line-height: 27px;
+}
+
+.grid-col1 li a {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.grid-col1 li:hover {
+    background-color: #9c9698;
+}
+.grid-col1 a:hover {
+    color: #f10215;
+}
+.grid-col2 {
+    width: 790px;
+    height: 100%;
+    margin-left: 10px;
+}
+.grid-col2 .grid2-top {
+    width: 790px;
+    height: 340px;
+}
+
+.grid-col2 .grid2-bottom {
+    margin-top: 10px;
+}
+
+/* 将图片转为块级元素，是为了消除图片之间的空隙; 或者可以使用垂直居中 */
+.grid-col2 .grid2-bottom img {
+    /* display: block; */
+    vertical-align: center;
+    float: left;
+    width: 390px;
+    height: 130px;
+}
+.bottom-r {
+    float: right;
+}
+
+
+
+.grid2-top{
+    position: relative;
+}
+
+.arrow-l,
+.arrow-r {
+    position: absolute;
+    width: 30px;
+    height: 60px;
+    transform: translateY(-50%);
+    top: 50%;
+    background-color: rgba(0,0,0,.15);
+    color: #E9E5E5;
+    text-align: center;
+    vertical-align: center;
+    line-height: 65px;
+    font-size: 25px;
+} 
+ 
+.arrow-r {
+ right: 0;
+} 
+
+
+.circle {
+    width: 160px;
+    height: 20px;
+    background-color: rgba(255,255,255,.3);
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    padding: 0 8px;
+}
+
+
+
+.circle a {
+    /* position: absolute;    */
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    float: left;
+    margin: 4px;
+    cursor: pointer;
+}
+
+
+.circle .current {
+    background-color: #f10215;
+}
+
+
+.grid-col3 {
+    width: 190px;
+    height: 100%;
+}
+
+/* 右边模块 */
+.login {
+    height: 85px;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.login-t {
+    width: 95px;
+    height: 60px;
+    line-height: 20px;
+    font-size: 12px;
+    white-space: nowrap; /* 强制在一行内显示*/
+    overflow: hidden; /*溢出部分隐藏*/
+    text-overflow: ellipsis; /* 超出部分显示省略号 */
+    color: #666666;
+    padding-left: 60px;
+    position: relative;
+    
+}
+.login-t a {
+    color: #666;
+}
+.login-t a:hover{
+    color: #f10512;
+}
+
+
+.user-avator  {
+    background: url(../images/sprite_userinfo@1x.png) no-repeat -70px 0;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.user-avator img {
+    /* 想让方形的图片变为圆形，如果是在盒子里，需要把圆角进行裁切 */
+    border-radius: 50%;
+    width: 40px;
+    margin: 5px;
+}
+
+.login-b a {
+    display: inline-block;
+    width: 65px;
+    height: 20px;
+    border: 3px solid #f10215;
+    color: #f10215;
+    font-size: 12px;
+    margin: 3px;
+    text-align: center;
+    line-height: 20px;
+}
+.login-b a:hover{
+    color: #fff;
+    background-color: #f10215;
+}
+
+
+
+.news {
+    height: 155px;
+    /* background-color: orange; */
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    padding: 7px 13px 0;
+    box-sizing:  border-box;
+
+}
+
+.news-t {
+    height: 19px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.news .news-t a{
+    float: left;
+    height: 17px;
+    line-height: 17px;
+}
+.first {
+    width: 38px;
+    border-right: 1px solid #ccc;
+}
+
+.last {
+    width: 25px;
+    /* margin-left: 15px; */
+    padding-left: 15px;
+}
+
+.news .news-t .more {
+    /* 单独的.more 权重不够 */
+    float: right;
+}
+
+/* .first:hover ,
+.last:hover {
+    border-bottom: 2px solid #f10215;
+} */
+
+.news-t div {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    background-color: #f10215;
+    bottom: -1px;
+}
+
+.news-b {
+    padding-top: 15px;
+}
+
+.news-b li {
+    height: 23px;
+    line-height: 23px;
+}
+
+.expand {
+    height: 209px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.expand ul {
+    /* 设置ul的宽度，让下面的li能在一行内容纳下4个 */
+    width: 195px; 
+    /* 为什么给ul加hidden没用呢？？？？
+    overflow: hidden; */
+}
+
+.expand li {
+    width: 47px;
+    height: 69px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    float: left;
+}
+.expand li a {
+    display: block;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.expand li i {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    background: url(../images/sprite_fs@1x.png) no-repeat;
+    width: 18px;
+    height: 23px;
+    background-position: -5px -88px;
+}
+.expand  li:first-child i {
+	width: 18px;
+	height: 22px;
+	background-position: -5px -88px;
+}
+
+.expand  li:nth-child(2) i {
+	width: 18px;
+	height: 22px;
+	background-position: -47px -88px;
+}
+
+.expand span {
+	font-size: 14px;
+};
